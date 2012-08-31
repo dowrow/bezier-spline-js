@@ -1,4 +1,5 @@
 bezier-spline-js
 ================
 
-Bezier Sp
+Bezier Splines in Javascript.
+
