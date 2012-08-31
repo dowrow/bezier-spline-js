@@ -141,7 +141,7 @@ var init = function(){
       var deg = vec.angle; 
       plane.rotate(deg).css({left: pos.x-45-vec.speed+"px", top:pos.y-40-vec.speed+"px"});
       shadow.rotate(deg).css({left: pos.x-45+vec.speed/2+"px", top:pos.y-40+vec.speed/2+"px"});
-      slider.css({left: 250-pos.x/2+"px", top:200-pos.y/2+"px"});
+      slider.css({left: 250-pos.x+"px", top:200-pos.y/2+"px"});
     }
     lastTime = t;
   }
