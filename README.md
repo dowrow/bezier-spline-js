@@ -9,6 +9,7 @@ Library for generating smooth curves passing through given points.
 You know, when you need to move an object along a curve.
 
 Usage:
+
 	var spline = new Spline({
 		points: array_of_control_points,
 		duration: time_in_miliseconds,
