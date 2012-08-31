@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Bezier-spline-js by leszekr</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Bezier-spline-js</h1>
+        <p>Bezier Splines in Javascript</p>
+
+        <p class="view"><a href="https://github.com/leszekr/bezier-spline-js">View the Project on GitHub <small>leszekr/bezier-spline-js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/leszekr/bezier-spline-js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/leszekr/bezier-spline-js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/leszekr/bezier-spline-js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Bezier Splines in Javascript.</h1>
+
+<p>Library for generating smooth curves passing through given points.</p>
+
+<p>You know, when you need to animate something along a curve.</p>
+
+<p>Usage:</p>
+
+<pre><code>var spline = new Spline({
+    points: array_of_control_points,
+    duration: time_in_miliseconds,
+    sharpness: how_curvy,
+    stepLength: distance_between_points_to_cache
+});
+
+//generate the curve
+var spline = new Spline({
+    points:[{x:130, y:130}, {x:250, y:30}, {x:400, y:200}, {x:50, y:320}, {x:100, y:500}, {x:300, y:600}, {x:600, y:530}, {x:480, y:300}, {x:500, y:100}, {x:700, y:50}, {x:850, y:320}, {x:600, y:600}, {x:350, y:520}, {x:300, y:400}],
+    duration:15000
+});
+
+// get the canvas context (assuming &lt;canvas id="canvas"&gt;&lt;/canvas&gt;)
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+// draw: 
+
+spline.draw(ctx);
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/leszekr">leszekr</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
