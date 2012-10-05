@@ -8,7 +8,7 @@ Library for generating smooth curves passing through given points.
 
 You know, when you need to move an object along a curve.
 
-For demo, see [http://leszekr.github.com/bezier-spline-js/demo.html](http://leszekr.github.com/bezier-spline-js/demo.html)
+For demo, see [http://leszekr.github.com/bezier-spline-js/demo.html](http://leszekr.github.com/bezier-spline-js/)
 
 Usage:
 
