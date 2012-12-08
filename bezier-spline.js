@@ -160,7 +160,7 @@ Spline.prototype.pos = function(time){
 		var b = B(t)
 		var pos = {
 			x : p2.x * b[0] + c2.x * b[1] +c1.x * b[2] + p1.x * b[3],
-			y : p2.y * b[0] + c2.y * b[1] +c1.y * b[2] + p1.y * b[3]
+			y : p2.y * b[0] + c2.y * b[1] +c1.y * b[2] + p1.y * b[3],
 			z : p2.z * b[0] + c2.z * b[1] +c1.z * b[2] + p1.z * b[3]
 		}
 		return pos; 
